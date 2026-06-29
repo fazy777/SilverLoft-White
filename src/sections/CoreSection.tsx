@@ -119,11 +119,11 @@ export default function CoreSection() {
         {/* Logo */}
         <div ref={logoRef} className="mb-8 opacity-0">
           <img
-            src="/silverloft-logo.jpg"
+            src="/silverloft-logo.png"
             alt="SilverLoft"
-            className="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-2xl"
+            className="w-24 h-24 md:w-32 md:h-32 mx-auto"
             style={{
-              boxShadow: '0 10px 30px rgba(37, 99, 235, 0.1)',
+              filter: 'drop-shadow(0 10px 20px rgba(41, 230, 246, 0.25))',
             }}
           />
         </div>

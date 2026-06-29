@@ -39,8 +39,11 @@ export default function Navigation() {
             : 'bg-transparent'
         }`}
       >
-        <a href="#" className="text-gradient-cyan font-display font-semibold text-xl tracking-[0.08em] hover:opacity-90 transition-opacity">
-          SILVERLOFT
+        <a href="#" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
+          <img src="/silverloft-logo.png" alt="SilverLoft Logo" className="w-8 h-8 object-contain" />
+          <span className="text-gradient-cyan font-display font-semibold text-xl tracking-[0.08em]">
+            SILVERLOFT
+          </span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
