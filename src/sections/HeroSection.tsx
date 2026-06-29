@@ -101,13 +101,13 @@ export default function HeroSection() {
         <div ref={ctaRef} className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0">
           <a
             href="#services"
-            className="px-10 py-4 bg-core-blue text-white font-display font-medium rounded-xl hover:bg-electric-blue hover:shadow-lg hover:shadow-blue-500/20 hover:scale-[1.02] transition-all duration-300"
+            className="px-10 py-4 bg-gradient-to-br from-[#29E6F6] to-[#2563EB] text-[#0B0F14] font-display font-semibold rounded-xl hover:from-[#4FF3FF] hover:to-[#4FF3FF] hover:shadow-[0_0_30px_rgba(41,230,246,0.35)] hover:scale-[1.02] transition-all duration-300"
           >
             Explore Services
           </a>
           <a
             href="#contact"
-            className="px-10 py-4 border border-core-blue/40 text-core-blue font-display font-medium rounded-xl hover:bg-core-blue/5 transition-all duration-300"
+            className="px-10 py-4 border border-[#29E6F6]/30 text-[#29E6F6] font-display font-medium rounded-xl hover:bg-[#29E6F6]/10 hover:shadow-[0_0_20px_rgba(41,230,246,0.15)] transition-all duration-300"
           >
             Start a Project
           </a>
@@ -119,7 +119,7 @@ export default function HeroSection() {
         ref={statsRef}
         className="absolute bottom-[4vh] left-0 right-0 flex justify-center px-4 opacity-0"
       >
-        <div className="flex justify-center gap-8 md:gap-16 px-8 py-4 glass-card border border-white/60 shadow-lg shadow-blue-500/5 rounded-2xl">
+        <div className="flex justify-center gap-8 md:gap-16 px-8 py-4 glass-card border border-[#2A3441]/50 shadow-lg shadow-blue-500/5 rounded-2xl">
           {[
             { num: '150+', label: 'Projects Delivered' },
             { num: '12', label: 'Countries Served' },

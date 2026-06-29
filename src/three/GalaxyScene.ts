@@ -49,7 +49,7 @@ export class GalaxyScene {
   constructor(container: HTMLElement) {
     this.container = container;
     this.scene = new THREE.Scene();
-    this.scene.fog = new THREE.FogExp2(0xf0f4f8, 0.02);
+    this.scene.fog = new THREE.FogExp2(0x0b0f14, 0.02);
 
     const aspect = container.clientWidth / container.clientHeight;
     this.camera = new THREE.PerspectiveCamera(75, aspect, 0.1, 1000);
@@ -89,9 +89,9 @@ export class GalaxyScene {
     const scales = new Float32Array(parameters.count);
     const randomness = new Float32Array(parameters.count * 3);
 
-    const colorInside = new THREE.Color('#2563eb');
-    const colorMid = new THREE.Color('#4f46e5');
-    const colorOutside = new THREE.Color('#93c5fd');
+    const colorInside = new THREE.Color('#29E6F6');
+    const colorMid = new THREE.Color('#2563EB');
+    const colorOutside = new THREE.Color('#D8DCE3');
 
     for (let i = 0; i < parameters.count; i++) {
       const i3 = i * 3;
@@ -135,7 +135,7 @@ export class GalaxyScene {
       uniforms: {
         uTime: { value: 0 },
         uSize: { value: 1.2 },
-        uColor: { value: new THREE.Color('#2563eb') },
+        uColor: { value: new THREE.Color('#29E6F6') },
       },
       transparent: true,
       depthWrite: false,
@@ -151,7 +151,7 @@ export class GalaxyScene {
     const glowMaterial = new THREE.MeshBasicMaterial({
       color: 0x2563eb,
       transparent: true,
-      opacity: 0.02,
+      opacity: 0.05,
     });
     const glow = new THREE.Mesh(glowGeometry, glowMaterial);
     this.scene.add(glow);
@@ -167,9 +167,9 @@ export class GalaxyScene {
         64
       );
       const ringMaterial = new THREE.MeshBasicMaterial({
-        color: 0x2563eb,
+        color: 0x29e6f6,
         transparent: true,
-        opacity: 0.04,
+        opacity: 0.06,
       });
       const ring = new THREE.Mesh(ringGeometry, ringMaterial);
       ring.position.set(
@@ -201,10 +201,10 @@ export class GalaxyScene {
     dustGeometry.setAttribute('size', new THREE.BufferAttribute(dustSizes, 1));
 
     const dustMaterial = new THREE.PointsMaterial({
-      color: 0x4f46e5,
+      color: 0x2563eb,
       size: 0.05,
       transparent: true,
-      opacity: 0.1,
+      opacity: 0.15,
       blending: THREE.NormalBlending,
       sizeAttenuation: true,
     });

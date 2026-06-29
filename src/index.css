@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222.2 47.4% 11.2%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 221.2 83.2% 53.3%;
-    --accent-foreground: 210 40% 98%;
+    --background: 213 29% 6%;
+    --foreground: 210 40% 98%;
+    --card: 215 28% 17%;
+    --card-foreground: 210 40% 98%;
+    --popover: 215 28% 17%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 184 92% 56%;
+    --primary-foreground: 213 29% 6%;
+    --secondary: 215 25% 65%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 215 25% 65%;
+    --muted-foreground: 215 25% 65%;
+    --accent: 184 92% 56%;
+    --accent-foreground: 213 29% 6%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --border: 214 21% 21%;
+    --input: 214 21% 21%;
+    --ring: 184 92% 56%;
     --radius: 0.625rem;
   }
 
@@ -31,7 +31,7 @@
   }
 
   body {
-    background: radial-gradient(circle at 50% 30%, #f0f4f8 0%, #f8fafc 70%, #ffffff 100%);
+    background: radial-gradient(circle at 50% 30%, #161B22 0%, #0B0F14 70%, #07090c 100%);
     @apply text-foreground;
     font-family: 'Space Grotesk', sans-serif;
     overflow-x: hidden;
@@ -42,8 +42,8 @@
   }
 
   ::selection {
-    background: rgba(37, 99, 235, 0.15);
-    color: #1e3a8a;
+    background: rgba(41, 230, 246, 0.2);
+    color: #F8FAFC;
   }
 }
 
@@ -57,36 +57,36 @@
   }
 
   .glass-panel {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(31, 41, 55, 0.45);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(42, 52, 65, 0.5);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   }
 
   .glass-card {
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(31, 41, 55, 0.35);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(15, 23, 42, 0.05);
+    border: 1px solid rgba(42, 52, 65, 0.3);
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   }
 
   .glow-border {
-    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.04);
-    border: 1px solid rgba(37, 99, 235, 0.15);
+    box-shadow: 0 4px 20px rgba(41, 230, 246, 0.1);
+    border: 1px solid rgba(41, 230, 246, 0.2);
   }
 
   .active-glow {
-    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.1);
-    border: 1px solid rgba(37, 99, 235, 0.3);
+    box-shadow: 0 8px 30px rgba(41, 230, 246, 0.35);
+    border: 1px solid rgba(41, 230, 246, 0.45);
   }
 
   .forge-panel {
-    background: rgba(59, 130, 246, 0.05);
-    border: 1px solid rgba(59, 130, 246, 0.15);
+    background: rgba(31, 41, 55, 0.25);
+    border: 1px solid rgba(42, 52, 65, 0.45);
   }
 
   .section-label {
@@ -97,7 +97,7 @@
   }
 
   .text-gradient-cyan {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    background: linear-gradient(135deg, #29E6F6 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

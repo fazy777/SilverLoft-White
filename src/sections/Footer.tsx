@@ -21,7 +21,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative w-full py-16 z-10 border-t border-core-blue/10 bg-cosmic-blue/60 backdrop-blur-md">
+    <footer className="relative w-full py-16 z-10 border-t border-border/50 bg-cosmic-blue/60 backdrop-blur-md">
       <div className="max-w-[1440px] mx-auto px-4 md:px-[4vw]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
@@ -84,7 +84,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-core-blue/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-border/50 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="font-mono text-xs text-muted">
             © 2025 SilverLoft. All rights reserved.
           </div>

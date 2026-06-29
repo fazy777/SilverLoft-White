@@ -193,7 +193,7 @@ export default function ContactSection() {
             </div>
 
             {/* Office Info card */}
-            <div className="mt-12 p-6 glass-card border border-white/60 shadow-md rounded-2xl">
+            <div className="mt-12 p-6 glass-card border border-[#2A3441]/50 shadow-md rounded-2xl">
               <div className="flex items-center gap-2 mb-2 text-core-blue">
                 <MessageSquare size={18} />
                 <span className="font-mono text-xs uppercase tracking-wider font-semibold">
@@ -208,7 +208,7 @@ export default function ContactSection() {
 
           {/* Form Column */}
           <div className="contact-form-col lg:col-span-7 opacity-0">
-            <div className="glass-panel p-8 md:p-10 border border-white/60 shadow-xl shadow-blue-500/5 rounded-3xl">
+            <div className="glass-panel p-8 md:p-10 border border-[#2A3441]/50 shadow-xl shadow-blue-500/5 rounded-3xl">
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Name */}
                 <div>
@@ -222,7 +222,7 @@ export default function ContactSection() {
                     onChange={(e) => setName(e.target.value)}
                     required
                     placeholder="Enter your name"
-                    className="w-full h-11 px-4 rounded-xl border border-border bg-white/50 text-starlight placeholder:text-muted-foreground/60 outline-none focus:border-core-blue transition-colors text-sm"
+                    className="w-full h-11 px-4 rounded-xl border border-border bg-[#1F2937]/50 text-starlight placeholder:text-muted-foreground/60 outline-none focus:border-core-blue transition-colors text-sm"
                   />
                 </div>
 
@@ -238,7 +238,7 @@ export default function ContactSection() {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                     placeholder="Enter your email"
-                    className="w-full h-11 px-4 rounded-xl border border-border bg-white/50 text-starlight placeholder:text-muted-foreground/60 outline-none focus:border-core-blue transition-colors text-sm"
+                    className="w-full h-11 px-4 rounded-xl border border-border bg-[#1F2937]/50 text-starlight placeholder:text-muted-foreground/60 outline-none focus:border-core-blue transition-colors text-sm"
                   />
                 </div>
 
@@ -254,7 +254,7 @@ export default function ContactSection() {
                     onChange={(e) => setSubject(e.target.value)}
                     required
                     placeholder="E.g., Brand Identity, Web Design, SaaS Development"
-                    className="w-full h-11 px-4 rounded-xl border border-border bg-white/50 text-starlight placeholder:text-muted-foreground/60 outline-none focus:border-core-blue transition-colors text-sm"
+                    className="w-full h-11 px-4 rounded-xl border border-border bg-[#1F2937]/50 text-starlight placeholder:text-muted-foreground/60 outline-none focus:border-core-blue transition-colors text-sm"
                   />
                 </div>
 
@@ -270,7 +270,7 @@ export default function ContactSection() {
                     required
                     rows={5}
                     placeholder="Tell us about your project, goals, and timeline..."
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-white/50 text-starlight placeholder:text-muted-foreground/60 outline-none focus:border-core-blue transition-colors text-sm resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-[#1F2937]/50 text-starlight placeholder:text-muted-foreground/60 outline-none focus:border-core-blue transition-colors text-sm resize-none"
                   />
                 </div>
 
@@ -278,7 +278,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full h-12 bg-core-blue hover:bg-electric-blue text-white rounded-xl font-display font-medium text-sm flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-blue-500/20 disabled:opacity-50 transition-all duration-300"
+                  className="w-full h-12 bg-gradient-to-br from-[#29E6F6] to-[#2563EB] text-[#0B0F14] rounded-xl font-display font-semibold text-sm flex items-center justify-center gap-2 hover:from-[#4FF3FF] hover:to-[#4FF3FF] hover:shadow-[0_0_25px_rgba(41,230,246,0.3)] disabled:opacity-50 transition-all duration-300"
                 >
                   {isSubmitting ? (
                     'Opening mail client...'

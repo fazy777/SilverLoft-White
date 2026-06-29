@@ -111,7 +111,7 @@ export default function TitanSection() {
       className="relative w-full min-h-screen py-24 md:py-32 z-10"
     >
       {/* Subtle Dot Grid Background */}
-      <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1.5px,transparent_1.5px)] [background-size:32px_32px] pointer-events-none opacity-60" />
+      <div className="absolute inset-0 bg-[radial-gradient(#2A3441_1.5px,transparent_1.5px)] [background-size:32px_32px] pointer-events-none opacity-60" />
 
       <div className="max-w-[1440px] mx-auto px-4 md:px-[4vw] relative">
         <div className="max-w-2xl mb-16">

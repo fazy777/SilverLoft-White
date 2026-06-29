@@ -149,7 +149,7 @@ export default function CoreSection() {
         <a
           ref={ctaRef}
           href="mailto:contact@silverloft.me"
-          className="inline-block px-12 py-5 bg-core-blue text-white font-display font-semibold text-lg rounded-xl opacity-0 hover:scale-105 hover:bg-electric-blue shadow-lg shadow-blue-500/25 transition-all duration-300"
+          className="inline-block px-12 py-5 bg-gradient-to-br from-[#29E6F6] to-[#2563EB] text-[#0B0F14] font-display font-semibold text-lg rounded-xl opacity-0 hover:scale-105 hover:from-[#4FF3FF] hover:to-[#4FF3FF] hover:shadow-[0_0_30px_rgba(41,230,246,0.35)] transition-all duration-300"
         >
           Start Your Project
         </a>
